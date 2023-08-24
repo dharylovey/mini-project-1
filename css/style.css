@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Montserrat:wght@200&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #ececec;
+    padding: 60px 0;
+    margin: 0;
+}
+
+/* navbar */
+.nav-link{
+    position: relative;
+}
+
+.position-fixed{
+    z-index: 20;
+}
+
+.nav-link::after{
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: #dc3545;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ececec;
+}
+.nav-link:hover::after{
+    opacity: 1; 
+}
+
+.nav-link.active {
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+@media (max-width: 991px){
+    .sidebar{
+        background-color: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px);
+    }
+}
+/* end of navbar */
+
+/* sign-in css */
+.box-area{
+    width: 900px;
+}
+/* end sign-in css */
+
+/* image hover  */
+.box{
+    object-fit: cover;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.box1:hover{
+    transform: rotateY(180deg);
+    transition: 1s;
+    cursor: pointer;
+}
+/* end image hover */
+
+
+/* social media */
+.social-media{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 15px 30px 0;
+    transition: 0.5s;
+    
+}
+
+.social-media:hover{
+    background-color: #007bff;
+    color: black;
+    box-shadow: 0 0 20px #007bff;
+    transform: rotateY(180deg);
+}
+
+.services-background{
+    background-image: url(assets/testi_bg_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+/* end social media */
+
+/* carousel  */
+.carousel-home-item{
+    height: 600px;
+}
+
+.carousel-image{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+/* back to top button */
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* responsive mobile */
+@media(min-width: 375px){
+    
+    .carousel-width{
+        width: 100%;
+    }
+}
+
+
+
+@media(max-width: 991px){
+    .nav-tabs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .services-res{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .contact-res{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .why-choose-us{
+        margin-top: 100px;
+    }
+
+    .about-res{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-res1{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-res2{
+        margin-top: 80px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accordion{
+        width: 100%;
+    }
+
+    footer{
+        text-align: center;
+    }
+    
+    .subscribe-form{
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media(min-width: 992px){
+    .accordion-res{
+        width: 75%;
+    }
+}

@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- bootstrap -->
+  <link rel="stylesheet" href="css/style.css"> <!--custom css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- fontawesome -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- boxicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- bootstrap icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- google fonts -->
+  <title>Sumaylo Roofing</title>
+</head>
+
+<body class="vh-100">
+  <!-- start navbar -->
+  <nav class="row fixed-top w-100">
+    <div class="col-lg-12 pe-0">
+      <div class="navbar navbar-expand-lg bg-secondary">
+        <div class="container">
+          <a class="navbar-brand fs-2 text-white" href="#home"><img src="assets/logo.png" alt="logo" width="70px" class="img-fluid">
+            Sumaylo Roofing</a>
+
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- sidebar -->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <!-- sidebar header -->
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title " id="offcanvasNavbarLabel">Sumaylo Roofing</h5>
+              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex align-items-center flex-lg-row flex-column p-4 p-lg-0" id="navbar-header">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 ">
+                <li class="nav-item mx-2">
+                  <a class="nav-link active text-light" href="#home">Home</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-light" area-current="page" href="#product">Products</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-light" href="#services">Services</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-light" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-light" href="#about">About</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-light" href="#faq">FAQ</a>
+                </li>
+              </ul>
+              <!-- login and signup -->
+              <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3 me-2">
+                <button type="button" class="text-bg-primary text-decoration-none px-3 py-1 border-0 rounded-4" data-bs-toggle="modal" data-bs-target="#login-modal">
+                  <a href="#" class="text-light text-decoration-none" >LOGIN<i
+                    class="bi bi-arrow-right"></i></a>
+                </button>
+              </div>
+              <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3">
+                <button type="button" class="text-bg-danger text-decoration-none px-3 py-1 border-0 rounded-4" data-bs-toggle="modal" data-bs-target="#signup-modal">
+                  <a href="#" class="text-light text-decoration-none" >SIGNUP</a>
+                </button>
+              </div> <!-- end login and signup -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- end navbar -->
+
+  <!-- main start -->
+  <main data-bs-spy="scroll" data-bs-target="#navbar-header" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+
+    <!-- carousel -->
+    <section class="row container-fluid d-flex justify-content-center align-items-center m-0  pt-5" id="home">
+      <div class="col-lg-12 carousel-width">
+        <div id="homecarousel" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#homecarousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#homecarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#homecarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#homecarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active carousel-home-item">
+              <img src="assets/background-image.jpg" class="d-block w-100 carousel-image" alt="image1">
+              <div class="carousel-caption mb-5 pb-5">
+                <h1 class="display-3">Welcome to Sumaylo Roofing</h1>
+                <p class="lead ">Welcome to Sumaylo Roofing, where we specialize in providing top-notch roofing services</p>
+                <button type="button" class="text-bg-primary text-decoration-none px-3 py-1 border-0 rounded-4" data-bs-toggle="modal" data-bs-target="#login-modal">
+                  <a href="#" class="text-bg-primary text-decoration-none px-3 py-1 rounded-4 ">GET QOUTE<i
+                      class="bi bi-arrow-right"></i></a>
+                </button>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <a href="https://web.facebook.com/dharyl2"><i class="bx bxl-facebook fs-1 social-media"></i></a>
+                    <a href="https://www.instagram.com/dharyl2/"><i class="bx bxl-instagram fs-1 social-media"></i></a>
+                    <a href="https://twitter.com/AlmoraCarry"><i class="bx bxl-twitter fs-1 social-media"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carousel-home-item">
+              <img src="assets/home-image2.webp" class="d-block w-100 carousel-image" alt="image2">
+              <div class="carousel-caption mb-5 pb-5">
+                <h1 class="display-3">Excellence Above All</h1>
+                <p class="lead ">Elevating roofing standards with our unmatched craftsmanship and dedication.</p>
+                <button type="button" class="text-bg-primary text-decoration-none px-3 py-1 border-0 rounded-4" data-bs-toggle="modal" data-bs-target="#login-modal">
+                  <a href="#" class="text-bg-primary text-decoration-none px-3 py-1 rounded-4">GET QOUTE<i
+                      class="bi bi-arrow-right"></i></a>
+                </button>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <a href="https://web.facebook.com/dharyl2"><i class="bx bxl-facebook fs-1 social-media"></i></a>
+                    <a href="https://www.instagram.com/dharyl2/"><i class="bx bxl-instagram fs-1 social-media"></i></a>
+                    <a href="https://twitter.com/AlmoraCarry"><i class="bx bxl-twitter fs-1 social-media"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carousel-home-item">
+              <img src="assets/home-image3.webp" class="d-block w-100 carousel-image" alt="image3">
+              <div class="carousel-caption mb-5 pb-5">
+                <h1 class="display-3">Transforming Homes, One Roof at a Time</h1>
+                <p class="lead ">Experience the beauty and security of our expertly designed and meticulously installed
+                  roofs.</p>
+                <button type="button" class="text-bg-primary text-decoration-none px-3 py-1 border-0 rounded-4" data-bs-toggle="modal" data-bs-target="#login-modal">
+                  <a href="#" class="text-bg-primary text-decoration-none px-3 py-1 rounded-4">GET QOUTE<i
+                        class="bi bi-arrow-right"></i></a>
+                </button>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <a href="https://web.facebook.com/dharyl2"><i class="bx bxl-facebook fs-1 social-media"></i></a>
+                    <a href="https://www.instagram.com/dharyl2/"><i class="bx bxl-instagram fs-1 social-media"></i></a>
+                    <a href="https://twitter.com/AlmoraCarry"><i class="bx bxl-twitter fs-1 social-media"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item carousel-home-item">
+              <img src="assets/home-image4.webp" class="d-block w-100 carousel-image" alt="image1">
+              <div class="carousel-caption mb-5 pb-5">
+                <h1 class="display-3">Preserving and Protecting</h1>
+                <p class="lead ">Beyond installation, we're your partners in maintaining and repairing roofs to ensure
+                  lasting quality and safety.</p>
+                <button type="button" class="text-bg-primary text-decoration-none px-3 py-1 border-0 rounded-4" data-bs-toggle="modal" data-bs-target="#login-modal">
+                  <a href="#" class="text-bg-primary text-decoration-none px-3 py-1 rounded-4">GET QOUTE<i
+                        class="bi bi-arrow-right"></i></a>
+                </button>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <a href="https://web.facebook.com/dharyl2"><i class="bx bxl-facebook fs-1 social-media"></i></a>
+                    <a href="https://www.instagram.com/dharyl2/"><i class="bx bxl-instagram fs-1 social-media"></i></a>
+                    <a href="https://twitter.com/AlmoraCarry"><i class="bx bxl-twitter fs-1 social-media"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#homecarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#homecarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="col-lg-12">
+        <hr class="text-bg-light ms-5 me-5">
+        <p class="lead text-center p-5 m-5">At Sumaylo Roofing, we take pride in delivering exceptional roofing
+          solutions that stand the test of time. With a passion for excellence and an unwavering commitment to quality,
+          we've earned a reputation as a leading name in the roofing industry. Our dedication to craftsmanship,
+          innovation, and customer satisfaction sets us apart.</p>
+        <hr class="text-bg-light ms-5 me-5">
+        <br>
+      </div>
+
+    </section>
+    <!-- end main -->
+
+    <!-- products -->
+    <section class="row container-fluid d-flex justify-content-center align-items-center" id="product">
+      <div class="col-lg-12 text-center mt-5" >
+        <p class="text-danger display-6 mt-5"><i class="fas fa-bars fs-3"></i> Our Products</p>
+      </div>
+      <div class="row container-fluid d-flex justify-content-center align-items-center text-center w-75">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="roof-tab" data-bs-toggle="tab" data-bs-target="#roof-tab-pane" type="button" role="tab" aria-controls="roof-tab-pane" aria-selected="true">Roof</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="decking-tab" data-bs-toggle="tab" data-bs-target="#decking-tab-pane" type="button" role="tab" aria-controls="decking-tab-pane" aria-selected="false">Decking</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="cladding-tab" data-bs-toggle="tab" data-bs-target="#cladding-tab-pane" type="button" role="tab" aria-controls="cladding-tab-pane" aria-selected="false">Cladding</button>
+          </li>
+          <!-- <li class="nav-item" role="presentation">
+            <button class="nav-link" id="info-tab" data-bs-toggle="tab" data-bs-target="#info-tab-pane" type="button" role="tab" aria-controls="info-tab-pane" aria-selected="false">Specification</button>
+          </li> -->
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="roof-tab-pane" role="tabpanel" aria-labelledby="roof-tab" tabindex="0">
+            <div class="row d-flex justify-content-center align-items-center">
+              <div class="col-lg-3 mt-3 text-center">
+                <h4>BARCELONA1040</h4>
+                <img src="assets/products/roof/barcelona1040.jpg" alt="barcelona1040" class="img-fluid rounded-3 shadow box">
+              </div>
+              <div class="col-lg-3 mt-3 text-center">
+                <h4>BARCELONA1065</h4>
+                <img src="assets/products/roof/barcelona1065.jpg" alt="barcelona1040" class="img-fluid rounded-3 shadow box" >
+              </div>
+              <div class="col-lg-3 mt-3 text-center">
+                <h4>BARCELONA 3'</h4>
+                <img src="assets/products/roof/barcelona3.jpg" alt="barcelona1040" class="img-fluid rounded-3 shadow box" >
+              </div>
+              <div class="col-lg-3 mt-3 text-center">
+                <h4>VENICE DUPLO 28</h4>
+                <img src="assets/products/roof/veniceduplo.jpg" alt="barcelona1040" class="img-fluid rounded-3 shadow box" >
+              </div>
+            </div>
+            <hr>
+            <div class="row d-flex justify-content-center align-items-center">
+              <div class="col-lg-3 mt-3 text-center">
+                <h4>MULTIRIB 8</h4>
+                <img src="assets/products/roof/multirib8.jpg" alt="barcelona1040" class="img-fluid rounded-3 shadow box" >
+              </div>
+              <div class="col-lg-3 mt-3 text-center">
+                <h4>MILLAZO TILE</h4>
+                <img src="assets/products/roof/milazzo.jpg" alt="barcelona1040" class="img-fluid rounded-3 shadow box" >
+              </div>
+              <div class="col-lg-3 mt-3 text-center">
+                <h4>MONACO TILE</h4>
+                <img src="assets/products/roof/monaco.jpg" alt="barcelona1040" class="img-fluid rounded-3 shadow box" >
+              </div>
+              <div class="col-lg-3 mt-3 text-center">
+                <h4>MEGARIB 100</h4>
+                <img src="assets/products/roof/megarib100.jpg" alt="barcelona1040" class="img-fluid rounded-3 shadow box" > 
+              </div>
+            </div>
+            <hr>
+            <div class="row d-flex justify-content-center align-items-center">
+              <div class="col-lg-3 mt-3 text-center">
+                <h4>HIRIB 50</h4>
+                <img src="assets/products/roof/hirib50.jpg" alt="barcelona1040" class="img-fluid rounded-3 shadow box" >
+              </div>
+              <div class="col-lg-3 mt-3 text-center">
+                <h4>SEAMING SEAM 1000</h4>
+                <img src="assets/products/roof/standingseam.jpg" alt="barcelona1040" class="img-fluid rounded-3 shadow box" >
+              </div>
+              <div class="col-lg-3 mt-3 text-center">
+                <h4>SEAMING MACHING</h4>
+                <img src="assets/products/roof/seamingmachine.jpg" alt="barcelona1040" class="img-fluid rounded-3 shadow box" >
+              </div>
+              <div class="col-lg-3 mt-3 text-center">
+                
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="decking-tab-pane" role="tabpanel" aria-labelledby="decking-tab" tabindex="0">
+            <div class="row d-flex justify-content-center align-items-center">
+              <div class="col-lg-12 mt-3 text-start m-2 p-2">
+                <h4>STEEL DECK</h4>
+                <img src="assets/products/decking/deck1.jpg" alt="barcelona1040" class="img-fluid rounded-3 shadow box2">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="cladding-tab-pane" role="tabpanel" aria-labelledby="cladding-tab" tabindex="0">
+            <div class="row">
+              <div class="col-lg-6 mt-3 text-center mb-2 mt-2">
+                <h4>BARCELONA CLADDING 1</h4>
+                <img src="assets/products/decking/BARCELONACLAD1.jpg" alt="barcelonaclad1" class="rounded-3 shadow box">
+              </div>
+              <div class="col-lg-6 mt-3 text-center mb-2 mt-2">
+                <h4>BARCELONA CLADDING 2</h4>
+                <img src="assets/products/decking/BARCELONACLAD2.jpg" alt="barcelonaclad2" class="rounded-3 shadow box">
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-lg-6 mt-3 text-center mb-2 mt-2">
+                <h4>SPANDRELL 4</h4>
+                <img src="assets/products/decking/SPANDREL4.jpg" alt="spandrel4" class="rounded-3 shadow box">
+              </div>
+              <div class="col-lg-6 mt-3 text-center mb-2 mt-2">
+                <h4>SPANDRELL 6</h4>
+                <img src="assets/products/decking/SPANDREL6.jpg" alt="spandrel6" class="rounded-3 shadow box">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- end product -->
+
+    <!-- services  -->
+    <section class="row container d-flex justify-content-center align-items-center m-auto p-5  w-100 min-vh-100"
+      id="services">
+      <div class="col-lg-12 text-center">
+        <p class="text-danger display-6 mt-5"><i class="fas fa-bars fs-3"></i> Our Services</p>
+        <h2 class="display-3">High-quality Roofing Services</h2>
+      </div>
+      <div class="row p-5">
+        <div class="col-lg-4 services-res">
+          <h2>Commercial Roofing</h2>
+          <p>A well-built roof not only protects build from elements</p>
+          <button class="btn bg-danger fs-5">
+            <a href="#home" class="text-decoration-none text-light">READ MORE</a>
+          </button>
+          <img src="assets/commercial_services.webp" alt="Commercial" width="360px" height="350px"
+            class="mt-4 rounded-3 box ">
+        </div>
+        <div class="col-lg-4 services-res">
+          <h2>Residential Roofing</h2>
+          <p>Roof Contruction also involves the installation of various components</p>
+          <button class="btn bg-danger fs-5 t">
+            <a href="#home" class="text-decoration-none text-light">READ MORE</a>
+          </button>
+          <img src="assets/residential_services .webp" alt="Commercial" width="360px" height="350px"
+            class="mt-4 rounded-3 box ">
+        </div>
+        <div class="col-lg-4 services-res">
+          <h2>Modified Roofing</h2>
+          <p>The material use for roof constuction can vary widely anging</p>
+          <button class="btn bg-danger fs-5 ">
+            <a href="#home" class="text-decoration-none text-light">READ MORE</a>
+          </button>
+          <img src="assets/modified_services.webp" alt="Commercial" width="360px" height="350px"
+            class="mt-4 rounded-3 box ">
+        </div>
+      </div>
+    </section> 
+    <!-- end services -->
+
+
+    <!-- contact -->
+    <section class="row container d-flex justify-content-center align-items-center m-auto mb-5 pb-5  min-vh-100"
+      id="contact">
+      <div class="col-lg-6 d-flex justify-content-center align-items-center">
+        <div class="mb-3 w-75 m-5 p-3 border border rounded-3 bg-secondary shadow">
+          <h3 class="p-3">Book Roof Solutions</h3>
+          <form action="get">
+            <div class="p-3">
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Write your name"
+                required>
+            </div>
+            <div class="p-3">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address"
+                required>
+            </div>
+            <div class="p-3">
+              <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Contact Number"
+                required>
+            </div>
+            <div class="p-3">
+              <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Inspection Date"
+                required>
+            </div>
+            <div class="p-3">
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Location"
+                required>
+            </div>
+            <div id="liveal"></div>
+            <button type="submit" class="btn btn-lg bg-danger fs-5 p-2 w-100 text-light">MAKE AN APPOINTMENT</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-6 why-choose-us">
+        <div class="ms-5">
+          <p class="text-danger display-6"><i class="fas fa-bars fs-3"></i> WHY CHOOSE US</p>
+          <h3 class="display-4">Quality Roofing for every Structure.</h3>
+          <p class="lead">Quality roofing is paramount for the protection and durability of any structure, be it
+            residential, commercial, or industrial. A well-maintained roof defends against the elements, enhances energy
+            efficiency, and ensures the safety of occupants. Investing in top-notch materials and installation
+            translates to long-term peace of mind and security.</p>
+        </div>
+        <div class="row mt-3 ">
+          <div class="col-lg-6 contact-res">
+            <div class="row">
+              <div class="col-lg-2 ">
+                <img src="assets/contact_1_1.svg" alt="warranty" class="box1">
+              </div>
+              <div class="col-md-10 text-center">
+                <h5>Roof Warranty</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 contact-res">
+            <div class="row">
+              <div class="col-lg-2 ">
+                <img src="assets/contact_1_3.svg" alt="Responsible" class="box1">
+              </div>
+              <div class="col-lg-10 text-center">
+                <h5>Great Responsible</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-6 contact-res">
+            <div class="row">
+              <div class="col-lg-2 ">
+                <img src="assets/contact_1_4.svg" alt="professional" class="box1">
+              </div>
+              <div class="col-sm-10 text-center ">
+                <h5>Professional Workers</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 contact-res">
+            <div class="row">
+              <div class="col-lg-2 ">
+                <img src="assets/contact_1_2.svg" alt="craftsmanship" class="box1">
+              </div>
+              <div class="col-lg-10 text-center">
+                <h5>Exceptional craftsmanship</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end contact -->
+
+    <!-- about -->
+    <section
+      class="row container  justify-content-center align-items-center m-auto pt-5 mt-5 mb-5 pb-5 min-vh-100 w-100 about-res"
+      id="about">
+      <div class="col-lg-4 p-1">
+        <img src="assets/about_1_1.png" alt="about-image" width="100%" height="auto" class="shadow rounded-3 box">
+      </div>
+      <div class="col-lg-2 container d-flex p-5 about-res1 ">
+        <div class="row">
+          <div class="col-lg-12 bg-primary rounded-3 mb-1 w-100 p-3 ">
+            <p class="fs-1 text-white m-3">15+</p>
+            <p class="lead text-white m-3">Years of Experience</p>
+            <img src="assets/client_group1.png" alt="client-group1" class="box">
+          </div>
+          <div class="col-lg-12 ">
+            <img src="assets/about_1_2.png" alt="worker" width="100%" height="auto" class="shadow rounded-3 mt-4 box ">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row about-res">
+          <div class="col-lg-12 ms-5">
+            <h4 class="text-danger display-6"><i class="fas fa-bars fs-3"></i> About Us</h4>
+            <h2 class="display-4">We're Raising The Roof On Roofing Standards</h2>
+            <p class="lead fs-6">A Sumaylo, roof mechanic, or roofing contractor is a tradeperson who Specializes in
+              <br>roof construction. Sumaylo replace, repair, and install the Roofs of building, using a variety of
+              materials, including roof metal sheets.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 ms-5">
+            <div class="row">
+              <div class="col-sm-2">
+                <img src="assets/about_house.png" alt="house" width="60px" class="box1">
+              </div>
+              <div class="col-sm-10">
+                <h4 class="display-6">Quality Materials</h4>
+                <p class="lead fs-6">Quality material refers to a type of material that is <br>Superior in terms of
+                  durability</p>
+              </div>
+            </div>
+          </div>
+          <hr class="ms-5">
+          <div class="col-lg-12 ms-5">
+            <div class="row">
+              <div class="col-sm-2">
+                <img src="assets/about_worker.png" alt="worker" width="60px" class="box1">
+              </div>
+              <div class="col-sm-10">
+                <h4 class="display-6">Expert Worker's</h4>
+                <p class="lead fs-6">Our expert workers pay meticulous attention to every detail, from the initial
+                  assessment to the final installation. This commitment to detail guarantees that your roofing project
+                  is executed flawlessly and meets our rigorous standards of excellence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ms-5">
+            <button class="btn bg-danger fs-5">
+              <a href="#home" class="text-decoration-none text-light ">READ MORE</a>
+            </button>
+          </div>
+          <div class="col-lg-5 d-flex about-res2">
+            <img src="assets/CEO.png" alt="ceo" width="60" class="rounded-5">
+            <div class="ms-2">
+              <h4 class="">Joan Sumaylo</h4>
+              <small class="lead fs-6">Founder CEO</small>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- end about -->
+
+    <!-- FAQ -->
+    <section class="row container-fluid d-flex justify-content-center align-items-center m-auto p-5  min-vh-100 accordion-res" id="faq">
+      <div class="col-lg-12 text-center">
+        <p class="text-danger display-6"><i class="fas fa-bars fs-3"></i> FAQ</p>
+        <h3 class="display-4">Exceptional craftsmanship for your roof</h3> 
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item rounded-3 mb-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <b>What are the different types of roofing materials?</b>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="lead">There are various roofing materials available, including asphalt shingles, metal roofing, wood shingles or shakes, clay or concrete tiles, slate, and synthetic materials like rubber or plastic. Each material has its own advantages and disadvantages in terms of durability, cost, and appearance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item rounded-3 mb-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <b>How long does a typical roof last?</b>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="lead">The lifespan of a roof varies depending on the material used and the climate it is exposed to. Asphalt shingles usually last around 20-30 years, metal roofing can last 40-70 years, while more durable materials like slate and clay tiles can last over 100 years.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item rounded-3 mb-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <b>When should I consider replacing my roof?</b>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="lead">Signs that it's time for a roof replacement include shingles that are curling, cracked, or missing; significant granule loss on asphalt shingles; leaks or water damage inside the building; and an overall aged appearance. If your roof is nearing the end of its expected lifespan, it's a good time to consider replacement.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item rounded-3 mb-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <b>Can I install a new roof over the existing one?</b>
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="lead">In some cases, it's possible to install a new roof over an existing one. However, it's generally recommended to remove the old roofing material before installing a new one. This allows for a thorough inspection of the underlying structure and prevents potential issues from being concealed.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item rounded-3 mb-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <b>What's the importance of roof maintenance?</b>
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="lead">Regular roof maintenance is crucial to extend its lifespan and prevent costly repairs. Maintenance tasks include cleaning debris, inspecting for damage, repairing any minor issues promptly, and ensuring proper ventilation. Neglecting maintenance can lead to leaks, deterioration, and the need for premature replacement.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item rounded-3 mb-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              <b>How do I choose a roofing contractor?</b>
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="lead">When selecting a roofing contractor, consider their experience, reputation, and credentials. Look for licenses, insurance, and references from previous clients. It's a good idea to obtain multiple quotes and compare them. Choose a contractor who communicates clearly, addresses your questions, and provides a detailed written contract.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item rounded-3 mb-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              <b>Is roof ventilation important?</b>
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="lead">Yes, roof ventilation is essential to maintain the health of your roof and the overall indoor environment. Proper ventilation helps regulate temperature and moisture levels, preventing mold growth, ice dams, and premature deterioration of roofing materials.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item rounded-3 mb-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              <b>How often do you need to repair the roof?</b>
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="lead">The frequency of roof repairs depends on factors such as the quality of the roofing material, the climate in your area, and the level of maintenance performed. Generally, you might need minor repairs every few years to address issues like damaged shingles or minor leaks. However, regular inspections can help identify and address small problems before they escalate.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item rounded-3 mb-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              <b>How long should a roof repair take?</b>
+            </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="lead">The duration of a roof repair project varies based on the extent of the damage, the type of repair needed, and the size of the roof. Simple repairs like fixing a few shingles can take a few hours, while more complex repairs or replacements might take a few days. A reputable roofing contractor can provide a more accurate estimate based on the specific circumstances.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item rounded-3 mb-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+              <b>What is the importance of gutters in roof maintenance?</b>
+            </button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="lead">Gutters play a crucial role in directing rainwater away from your roof and foundation. Clogged or damaged gutters can lead to water backing up under the roof's edge, causing leaks and deterioration. Regularly clean and maintain your gutters to ensure they are functioning properly and channeling water away from your home effectively.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item rounded-3 mb-2">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+              <b>How can I prepare my roof for extreme weather conditions?</b>
+            </button>
+          </h2>
+          <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="lead">To prepare your roof for extreme weather, consider reinforcing it with impact-resistant materials if you're in an area prone to hail or strong winds. Ensure proper attic insulation and ventilation to prevent ice dams and moisture buildup. Trim overhanging branches to minimize the risk of falling debris during storms, and regularly inspect your roof after severe weather events for any potential damage.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>   
+    <!-- end FAQ -->
+
+
+    <!-- footer -->
+    <footer class="bg-black w-100">
+      <div class="row ms-5 pt-5 text-light">
+        <div class="col-lg-3 mb-5">
+          <img src="assets/logo.png" alt="logo" width="80px">
+          <span class="fs-3">Sumaylo Roofing</span>
+          <p class="lead">Experience peace of mind with our roofing solutions.</p>
+          <div>
+            <h6>Connect with Us:</h6>
+            <a href="https://web.facebook.com/dharyl2"><i class="bx bxl-facebook fs-1 social-media"></i></a>
+            <a href="https://www.instagram.com/dharyl2/"><i class="bx bxl-instagram fs-1 social-media"></i></a>
+            <a href="https://twitter.com/AlmoraCarry"><i class="bx bxl-twitter fs-1 social-media"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 mb-5 text-center">
+          <span class="fs-5">Our Services</span>
+
+          <p><a href="#services">Commercial Roofing</a></p>
+          <p><a href="#services">Residential Roofing</a></p>
+          <p><a href="#services">Modified Roofing</a></p>
+        </div>
+        <div class="col-lg-3 mb-5">
+          <h6>Contact Information</h6>
+          <li>Cell #: 0935-360-9957</li>
+          <li>Email Address: mdhar1487@gmail.com</li>
+          <li>Address: Brgy. Washington <br>Surigao del Norte. S.D.N</li>
+
+        </div>
+        <div class="col-lg-3 mb-5">
+          <h4>Subscribe to Our Newsletter</h4>
+          <p>Stay updated with our latest news and promotions.</p>
+          <br>
+          <form class="subscribe-form w-75">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Enter your email">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center justify-content-center align-items-center mb-4 text-light">
+          <small>&copy; 2023 Sumayloroofing.com. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <!-- modal login -->
+    <section class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="login-modal-label">Login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="get">
+              <div class="input-group mb-3">
+                  <input type="email" class="form-control form-control-lg bg-light fs-6" placeholder="Email address" required>
+              </div>
+              <div class="input-group mb-3">
+                  <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password" required>
+              </div>
+              <div class="input-group mb-5 d-flex justify-content-between">
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="form-check">
+                      <label for="form-check" class="form-check-label text-secondary"><small>Remember me</small></label>
+                  </div>
+                  <div class="forgot">
+                      <small><a href="#">Forgot Password?</a></small>
+                  </div>
+              </div>
+              <div class="input-group mb-3">
+                  <button type="submit" class="btn btn-lg btn-primary w-100 fs-6">Login</button>
+              </div>
+              <div class="input-group mb-3 text-center">
+                  <!-- 2 button  -->
+                  <!-- <button type="submit" class="btn btn-lg btn-light w-100 fs-6"><img src="assets/google.png" alt="google" style="width: 25px;"class="me-2">Sign in with Google</button> -->
+                  <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=AXo7B7VEuBPpoZCgupmnllmHKi6X9p8s-DZ91_ytNxitAqAgDj-bKMV5Mgt0o6l9pLsKLaNi45UN&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-301989088%3A1692117557010326" class="text-bg-light text-decoration-none px-3 py-1 rounded-2 w-100"><img src="assets/google.png" alt="google" style="width: 25px;">Sign in with Google</a>
+              </div>
+              <div class="row">
+                  <small>Don't have account? <a href="#" data-bs-target=#signup-modal data-bs-toggle="modal">Sign Up</a></small>
+              </div>
+          </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </section> 
+    
+    <!-- end login modal -->
+
+    <!-- signup modal -->
+    <section class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="signup-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="signup-modal-label">Sign Up</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="get">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Name" required>
+              </div>
+              <div class="input-group mb-3">
+                  <input type="email" class="form-control form-control-lg bg-light fs-6" placeholder="Email address" required>
+              </div>
+              <div class="input-group mb-3">
+                  <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password" required>
+              </div>
+              <div class="input-group mb-3">
+                  <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Repeat your password" required>
+              </div>
+              <div class="input-group mb-5 d-flex justify-content-between">
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="form-check">
+                      <label for="form-check" class="form-check-label text-secondary"><small>Remember me</small></label>
+                  </div>
+              </div>
+              <div class="input-group mb-3">
+                  <button type="submit" class="btn btn-lg btn-primary w-100 fs-6">Create Account</button>
+              </div>
+              <div class="input-group mb-3 text-center">
+                  <!-- 2 button  -->
+                  <!-- <button type="submit" class="btn btn-lg btn-light w-100 fs-6"><img src="assets/google.png" alt="google" style="width: 25px;"class="me-2">Sign in with Google</button> -->
+                  <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=AXo7B7VEuBPpoZCgupmnllmHKi6X9p8s-DZ91_ytNxitAqAgDj-bKMV5Mgt0o6l9pLsKLaNi45UN&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-301989088%3A1692117557010326" class="text-bg-light text-decoration-none px-3 py-1 rounded-2 w-100"><img src="assets/google.png" alt="google" style="width: 25px;">Sign in with Google</a>
+              </div>
+              <div class="row">
+                  <small>Don't have account? <a href="#" data-bs-target="#login-modal" data-bs-toggle="modal">Login</a></small>
+              </div>
+          </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- end signup  -->
+    
+  </main> <!-- end main -->
+  
+
+  <script src="js/bootstrap.min.js"></script> <!-- js -->
+</body>
+</body>
+
+</html>
