@@ -89,9 +89,9 @@
     data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
 
     <!-- carousel -->
-    <section class="row container-fluid d-flex justify-content-center align-items-center m-0  pt-5" id="home">
-      <div class="col-sm-12 col-md-12 col-lg-12 carousel-width ms-sm-auto">
-        <div id="homecarousel" class="carousel slide">
+    <section class="row container-fluid d-flex justify-content-center align-items-center  pt-5" id="home">
+      <div class="col-sm-12 col-md-12 col-lg-12 carousel-width">
+        <div id="homecarousel" class="carousel slide carousel-responsive">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#homecarousel" data-bs-slide-to="0" class="active" aria-current="true"
               aria-label="Slide 1"></button>
@@ -187,9 +187,9 @@
       </div>
 
 
-      <div class="col-lg-12">
+      <div class="col-lg-12 text">
         <hr class="text-bg-light ms-5 me-5">
-        <p class="lead text-center p-5 m-5">At Sumaylo Roofing, we take pride in delivering exceptional roofing
+        <p class="lead text-center">At Sumaylo Roofing, we take pride in delivering exceptional roofing
           solutions that stand the test of time. With a passion for excellence and an unwavering commitment to quality,
           we've earned a reputation as a leading name in the roofing industry. Our dedication to craftsmanship,
           innovation, and customer satisfaction sets us apart.</p>
@@ -315,13 +315,13 @@
     <!-- end product -->
 
     <!-- services  -->
-    <section class="row container d-flex justify-content-center align-items-center m-auto p-5  w-100 min-vh-100"
+    <section class="row container d-flex justify-content-center align-items-center  w-100 min-vh-100"
       id="services">
       <div class="col-lg-12 text-center">
         <p class="text-danger display-6 mt-5"><i class="fas fa-bars fs-3"></i> Our Services</p>
         <h2 class="display-3">High-quality Roofing Services</h2>
       </div>
-      <div class="row p-5 services-container-image">
+      <div class="row services-container-image">
         <div class="col-lg-4 services-res">
           <h2>Commercial Roofing</h2>
           <p>A well-built roof not only protects build from elements</p>
@@ -343,7 +343,7 @@
         <div class="col-lg-4 services-res">
           <h2>Modified Roofing</h2>
           <p>The material use for roof constuction can vary widely anging</p>
-          <button class="btn bg-danger fs-5 ">
+          <button class="btn bg-danger fs-5 t">
             <a href="#home" class="text-decoration-none text-light">READ MORE</a>
           </button>
           <img src="assets/modified_services.webp" alt="Commercial" 
@@ -355,10 +355,10 @@
 
 
     <!-- contact -->
-    <section class="row container d-flex justify-content-center align-items-center m-auto mb-5 pb-5  min-vh-100"
+    <section class="row container d-flex justify-content-center align-items-center mb-5 pb-5  min-vh-100"
       id="contact">
       <div class="col-lg-6 d-flex justify-content-center align-items-center">
-        <div class="mb-3 w-75 m-5 p-3 border border rounded-3 bg-secondary shadow">
+        <div class="mb-3 w-75 p-3 border border rounded-3 bg-secondary shadow contact-form">
           <h3 class="p-3">Book Roof Solutions</h3>
           <form action="get">
             <div class="p-3">
@@ -382,7 +382,9 @@
                 required>
             </div>
             <div id="liveal"></div>
-            <button type="submit" class="btn btn-lg bg-danger fs-5 p-2 w-100 text-light">MAKE AN APPOINTMENT</button>
+            <button class="btn bg-danger fs-5 t">
+              <a href="#home" class="text-decoration-none text-light">MAKE AN APPOINTMENT</a>
+            </button>
           </form>
         </div>
       </div>
@@ -446,10 +448,10 @@
 
     <!-- about -->
     <section
-      class="row container  justify-content-center align-items-center m-auto pt-5 mt-5 mb-5 pb-5 min-vh-100 about-res"
+      class="row container  justify-content-center align-items-center pt-5 mt-5 pb-5 min-vh-100 about-res"
       id="about">
       <div class="col-lg-4 p-1 about-images">
-        <img src="assets/about_1_1.png" alt="about-image" width="100%" height="auto" class="shadow rounded-3 box">
+        <img src="assets/about_1_1.png" alt="about-image" width="100%" height="auto" class="shadow rounded-3 box about-first-image">
       </div>
       <div class="col-lg-2 container d-flex p-5 about-res1 ">
         <div class="row">
@@ -465,7 +467,7 @@
       </div>
       <div class="col-lg-6 about-caption">
         <div class="row about-res">
-          <div class="col-lg-12 ms-5">
+          <div class="col-lg-12">
             <h4 class="text-danger display-6"><i class="fas fa-bars fs-3"></i> About Us</h4>
             <h2 class="display-4">We're Raising The Roof On Roofing Standards</h2>
             <p class="lead fs-6">A Sumaylo, roof mechanic, or roofing contractor is a tradeperson who Specializes in
@@ -502,7 +504,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 ms-5">
+          <div class="col-lg-4">
             <button class="btn bg-danger fs-5">
               <a href="#home" class="text-decoration-none text-light ">READ MORE</a>
             </button>
@@ -521,7 +523,7 @@
     <!-- end about -->
 
     <!-- FAQ -->
-    <section class="row container-fluid d-flex justify-content-center align-items-center m-auto p-5  min-vh-100 accordion-res" id="faq">
+    <section class="row container-fluid d-flex justify-content-center align-items-center m-auto  min-vh-100 accordion-res" id="faq">
       <div class="col-lg-12 text-center">
         <p class="text-danger display-6"><i class="fas fa-bars fs-3"></i> FAQ</p>
         <h3 class="display-4">Exceptional craftsmanship for your roof</h3> 
@@ -666,7 +668,7 @@
 
     <!-- footer -->
     <footer class="bg-black w-100">
-      <div class="row ms-5 pt-5 text-light ">
+      <div class="row pt-5 text-light ">
         <div class="col-lg-3 mb-5">
           <img src="assets/logo.png" alt="logo" width="80px">
           <span class="fs-3">Sumaylo Roofing</span>

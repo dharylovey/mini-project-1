@@ -242,8 +242,94 @@ html{
         display: flex;
         justify-content: center;
     }
+    .carousel-responsive{
+        width: 100%;
+    }
 }
 
+@media(max-width: 320px){
+    #home{
+        margin-left: auto;
+    }
+    #home .text p{
+        font-size: large;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    #product{
+        margin-left: auto;
+    }
+
+    #services{
+        margin-left: auto;
+    }
+    #services .btn{
+        font-size: xx-small;
+    }
+    #services .btn a{
+        font-size: xx-small;
+    }
+
+    #contact{
+        margin-left: auto;
+    }
+    #contact .form-control{
+        font-size: 0.8rem;
+    }
+    #contact p,h3{
+        text-align: center;
+    }
+    #contact h3{
+        font-weight: 800;
+    }
+    #contact .btn a{
+        font-size: smaller;
+        color: #ececec;
+        text-decoration: none;
+    }
+    #contact .contact-form{
+        margin-top: 3rem;
+    }
+
+    #contact .why-choose-us{
+        margin-top: 3rem;
+    }
+    #about{
+        margin-left: auto;
+    }
+
+    #about .btn a{
+        font-size: small;
+    }
+    #about .about-first-image{
+        width: inherit;
+    }
+
+    #accordionExample b{
+        font-size: small;
+    }
+    footer .form-control{
+        font-size: xx-small;
+    }
+
+    footer li{
+        font-size: small;
+    }
+
+    footer a{
+        text-decoration: none;
+    }
+    footer a:hover{
+        text-decoration: underline;
+        transition: 0.2s;
+    }
+
+    footer i{
+        width: inherit;
+    }
+}
 
 
 
