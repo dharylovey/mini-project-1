@@ -378,6 +378,10 @@ html{
         margin-right: auto; 
         width: 100%;
     }
+    #product{
+        margin-left: auto;
+        margin-right: auto;
+    }
     #services{
         margin: auto;
     }
@@ -398,6 +402,8 @@ html{
         margin-right: auto;
     }
     #faq{
+        margin-left: auto;
+        margin-right: auto;
         .display-4{
             font-size: 2rem;
         }
