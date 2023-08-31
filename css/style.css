@@ -436,6 +436,9 @@ html{
         margin-left: auto;
         margin-right: auto;
     }
+    #contact .contact-form{
+        margin-top: 2rem;
+    }
     #contact .btn{
         width: -webkit-fill-available;
     }
