@@ -493,6 +493,9 @@ html{
         margin-left: auto;
         margin-right: auto;
     }
+    #contact .btn{
+        width: -webkit-fill-available;
+    }
     #about{
         margin-left: auto;
         margin-right: auto;
