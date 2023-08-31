@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Montserrat:wght@200&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
+
 body{
     font-family: 'Inter', sans-serif;
     background-color: #ececec;
@@ -214,11 +215,6 @@ html{
 
 }
 
-@media(min-width: 992px){
-    .accordion-res{
-        width: 75%;
-    }
-}
 
 @media(max-width: 500px){
     .box{
@@ -260,6 +256,7 @@ html{
 
     #product{
         margin-left: auto;
+        
     }
 
     #services{
@@ -274,6 +271,7 @@ html{
 
     #contact{
         margin-left: auto;
+        
     }
     #contact .form-control{
         font-size: 0.8rem;
@@ -328,6 +326,182 @@ html{
 
     footer i{
         width: inherit;
+    }
+}
+
+@media(max-width: 375px){
+    #product{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .contact-form{
+        margin-top: 1rem;
+    }
+
+    #cladding-tab-pane .box{
+        width: 100%;
+    }
+    
+}
+
+@media(max-width: 425px){
+    #home{
+        margin-left: auto;
+    }
+
+    #product{
+        margin-left: auto;
+    }
+
+    #services{
+        margin-left: auto;
+    }
+    #contact{
+        margin-top: 2rem;
+        margin-left: auto;
+    }
+    #about{
+        margin-left: auto;
+    }
+    #faq{
+        margin-left: auto;
+    }
+    #footer li{
+        list-style: none;
+    }
+}
+
+@media(max-width: 768px){
+    #home{
+        margin-left: auto;
+        margin-right: auto; 
+        width: 100%;
+    }
+    #services{
+        margin: auto;
+    }
+    #services .services-res{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact{
+        margin: auto;
+        margin-top: 3rem;
+    }
+    #contact .btn{
+        width: -webkit-fill-available;
+    }
+
+    #about{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #faq{
+        .display-4{
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .logo-size{
+        font-size: small;
+    }
+
+    #myTab{
+        display: flex;
+        justify-content: center;
+    }
+    #home{
+        margin: auto;
+    }
+    #product{
+        margin: auto;
+    }
+    #services{
+        margin: auto;
+    }
+    #services .services-res h2{
+        font-size: larger;
+        font-weight: 700;
+    }
+    #services .services-res{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contact .btn{
+        width: -webkit-fill-available;
+    }
+
+    #about{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #about .about-res1{
+        display: none;
+    }
+    #about .about-res2 p{
+        text-align: center;
+    }
+    #about .about-res2 img{
+        height: fit-content;
+    }
+    #about .about-res2 button a{
+        font-size: small;
+    }
+    #about .about-caption{
+        margin-left: 3rem;
+    }
+    #faq{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer .footer-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media  (min-width: 1025px){
+    #home{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #product{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #services{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contact{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #about{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #faq{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer .footer-container{
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 }
 
