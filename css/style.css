@@ -9,6 +9,12 @@ body{
 }
 
 /* navbar */
+nav .sign-up-button{
+    margin-right: 1.5rem;
+}
+nav .navbar-toggler-icon{
+    margin-right: 1rem;
+}
 .nav-link{
     position: relative;
 }
@@ -244,6 +250,10 @@ html{
 }
 
 @media(max-width: 320px){
+    nav .nav-logo-container{
+        display: none;
+    }
+
     #home{
         margin-left: auto;
     }
